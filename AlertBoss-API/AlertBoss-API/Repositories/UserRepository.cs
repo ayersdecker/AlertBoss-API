@@ -106,6 +106,7 @@ public class UserRepository
                 {
                     Users.Remove(U);
                     await this.Context.SaveChangesAsync();
+                    await this.Context.DisposeAsync();
                     return U;
                 }
             }
