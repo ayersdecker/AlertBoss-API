@@ -46,7 +46,7 @@ public class SettingController : ControllerBase
     }
     
     // Delete Settings
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public async Task<ActionResult> Delete(int id)
     {
         return Ok(await this._repository.Delete(id));

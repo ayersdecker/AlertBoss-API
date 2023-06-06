@@ -2,9 +2,10 @@
 
 namespace AlertBoss_API.Models;
 
-[Table("contact")]
+[Table("Contact")]
 public class Contact
 {
     [Column("id")]
     public int Id { get; set; }
+
 }

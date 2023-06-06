@@ -46,7 +46,7 @@ public class EventController : ControllerBase
     }
     
     // Delete Event
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public async Task<ActionResult> Delete(int id)
     {
         return Ok(await this._repository.Delete(id));
