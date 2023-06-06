@@ -2,7 +2,7 @@
 
 namespace AlertBoss_API.Models;
 
-[Table("user")]
+[Table("Users")]
 public class User
 {
     [Column("uid")]
