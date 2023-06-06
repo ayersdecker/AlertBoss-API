@@ -2,9 +2,17 @@
 
 namespace AlertBoss_API.Models;
 
-[Table("alarm")]
+[Table("Alarms")]
 public class Alarm
 {
-    [Column("id")]
+    [Column("alarmId")]
     public int Id { get; set; }
+    [Column("eventType")]
+    public string EventType { get; set; }
+    [Column("time")]
+    public DateTime Time { get; set; }
+    [Column("snooze")]
+    public bool Snooze { get; set; }
+    [Column("active")]
+    public bool Active { get; set; }
 }
