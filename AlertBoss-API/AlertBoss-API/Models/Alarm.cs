@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AlertBoss_API.Models;
-
+//
 [Table("Alarms")]
 public class Alarm
 {
